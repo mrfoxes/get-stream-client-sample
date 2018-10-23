@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'react-router-dom/es/Link'
+import { Link } from 'react-router-dom'
 import { withStreamContext } from '../Getstream/Context/GetstremContext'
 import Avatar from '../Ui/Avatar'
 import Box from '../Ui/Box'

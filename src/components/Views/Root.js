@@ -11,7 +11,7 @@ const Root = ({ route, ...props }) => (
     errorComponent={<Error />}
     loadingComponent={null}
   >
-    <AppHeader /> {renderRoutes(route.routes)}{' '}
+    <AppHeader /> {renderRoutes(route.routes, props)}{' '}
   </StreamContextProvider>
 )
 
