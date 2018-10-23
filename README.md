@@ -157,3 +157,14 @@ const MultiFeedRenderer = ({ activity, ...props }) => {
 
 export default MultiFeedRenderer
 ```
+
+##Tests
+
+To run test
+
+    yarn test
+    
+Sample tests are provided for:
+- index
+- Text
+- ActivitySwitchRenderer
