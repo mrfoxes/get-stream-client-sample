@@ -1,0 +1,27 @@
+.normal {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.fontSizeSm {
+    font-size: 13px;
+}
+
+.fontSizeNormal {
+    font-size: 15px;
+}
+
+.fontSizeMd {
+    font-size: 22px;
+}
+
+.fontSizeLg {
+    font-size: 28px;
+}

@@ -1,0 +1,27 @@
+.directionRow {
+    flex-direction: row;
+}
+
+.directionColumn {
+    flex-direction: column;
+}
+
+.directionInitial {
+    flex-direction: initial;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.bordered {
+    composes: border from "./Borders.module.css";
+}
+
+.scroll {
+    overflow: scroll;
+}

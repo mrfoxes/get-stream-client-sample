@@ -1,0 +1,7 @@
+.border {
+    border: 1px solid var(--jet);
+}
+
+.borderTop {
+    border-top: 1px solid var(--jet);
+}

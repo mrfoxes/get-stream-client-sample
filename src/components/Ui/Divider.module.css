@@ -1,0 +1,7 @@
+.divider {
+    composes: borderTop from "./Borders.module.css";
+    border-bottom: 0;
+    border-left: 0;
+    height: 1px;
+    width: 100%;
+}

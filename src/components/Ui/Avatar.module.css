@@ -1,0 +1,7 @@
+.circle {
+    composes: circle from "./Box.module.css";
+}
+
+.square {
+    composes: square from "./Box.module.css";
+}

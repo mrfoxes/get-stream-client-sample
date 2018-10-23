@@ -1,0 +1,83 @@
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.table {
+    display: table;
+}
+
+.flex {
+    display: flex;
+}
+
+.justifyEnd {
+    justify-content: end;
+}
+
+.justifyStart {
+    justify-content: start;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifySpaceBetween {
+    justify-content: space-between;
+}
+
+.justifySpaceAround {
+    justify-content: space-around;
+}
+
+.justifyInitial {
+    justify-content: initial;
+}
+
+.alignStart {
+    align-items: flex-start;
+}
+
+.alignEnd {
+    align-items: flex-end;
+}
+
+.alignMiddle {
+    align-items: center;
+}
+
+.alignInitial {
+    align-items: initial;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.initial {
+    position: initial;
+}
+
+.inherit {
+    position: inherit;
+}
