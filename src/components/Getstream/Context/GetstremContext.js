@@ -6,9 +6,20 @@ import { createConsumerContext } from '../../../utils/utils'
 import FeedManager from '../FeedManager'
 import { safeRender } from '../utils'
 
+type Props = {
+  apiKey: String,
+  apiSecret?: String,
+  appId?: String,
+  userToken: String,
+  options?: String,
+  errorComponent: Element | Function,
+  loadingComponent: Element | Function,
+  onError: Function | Number
+}
+
 const { Consumer, Provider } = createContext()
 
-class StreamContextProvider extends Component {
+class StreamContextProvider extends Component<Props> {
   get client() {
     return this._client
   }

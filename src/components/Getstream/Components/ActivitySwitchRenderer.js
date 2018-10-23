@@ -2,7 +2,12 @@ import { get } from 'lodash'
 import PropTypes from 'prop-types'
 import { safeRender } from '../utils'
 
-const ActivitySwitchRenderer = props => {
+type Props = {
+  verbs: Object,
+  activity: Object
+}
+
+const ActivitySwitchRenderer = (props): Props => {
   const { activity: { verb }, verbs } = props
 
   const component = get(verbs, verb, null)
