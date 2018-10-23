@@ -31,6 +31,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/lodash": "^4.14.117"
+    "@types/lodash": "^4.14.117",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.2"
   }
 }

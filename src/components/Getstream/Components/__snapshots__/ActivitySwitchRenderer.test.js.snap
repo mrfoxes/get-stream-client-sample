@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex directionColumn justifyInitial square inherit"
+  style={
+    Object {
+      "height": "auto",
+      "margin": 0,
+      "marginBottom": 30,
+      "padding": 0,
+      "width": "auto",
+      "zIndex": "auto",
+    }
+  }
+>
+  <div
+    className="block square inherit"
+    style={
+      Object {
+        "height": "auto",
+        "margin": 0,
+        "marginBottom": 15,
+        "padding": 0,
+        "width": "auto",
+        "zIndex": "auto",
+      }
+    }
+  >
+    <a
+      href="/users/purpletiger922"
+      onClick={[Function]}
+    >
+      <div
+        className="flex directionRow justifyInitial square inherit"
+        style={
+          Object {
+            "height": "auto",
+            "margin": 0,
+            "padding": 0,
+            "width": "auto",
+            "zIndex": "auto",
+          }
+        }
+      >
+        <div
+          className="block square inherit"
+          style={
+            Object {
+              "height": "auto",
+              "margin": 0,
+              "marginRight": 5,
+              "padding": 0,
+              "width": "auto",
+              "zIndex": "auto",
+            }
+          }
+        >
+          <div
+            className="block square inherit"
+            style={
+              Object {
+                "height": 25,
+                "margin": 0,
+                "padding": 0,
+                "width": 25,
+                "zIndex": "auto",
+              }
+            }
+          >
+            <div
+              className="block vividGambodgeBg circle inherit"
+              style={
+                Object {
+                  "height": 25,
+                  "margin": 0,
+                  "padding": 0,
+                  "width": 25,
+                  "zIndex": "auto",
+                }
+              }
+            >
+              <img
+                alt=""
+                className="fullWidth circle"
+                src="https://randomuser.me/api/portraits/med/men/97.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="flex directionInitial justifyInitial alignMiddle square inherit"
+          style={
+            Object {
+              "height": "auto",
+              "margin": 0,
+              "padding": 0,
+              "width": "auto",
+              "zIndex": "auto",
+            }
+          }
+        >
+          <span
+            className="bold black"
+          >
+            Benjamin hansen
+          </span>
+        </div>
+      </div>
+    </a>
+    <div
+      className="block square inherit"
+      style={
+        Object {
+          "height": "auto",
+          "margin": 0,
+          "marginTop": 4,
+          "padding": 0,
+          "width": "auto",
+          "zIndex": "auto",
+        }
+      }
+    >
+      <span
+        className="normal grayBlue fontSizeSm"
+      >
+        18th October at 12:30
+      </span>
+    </div>
+  </div>
+  <div
+    className="block square inherit"
+    style={
+      Object {
+        "height": "auto",
+        "margin": 0,
+        "padding": 0,
+        "width": "auto",
+        "zIndex": "auto",
+      }
+    }
+  >
+    <span
+      className="normal black"
+    >
+      <a
+        href="/users/beautifulpanda108"
+        onClick={[Function]}
+      >
+        <span
+          className="normal spanishBlue inline"
+        >
+          @beautifulpanda108
+           
+        </span>
+      </a>
+      <span
+        className="normal black inline"
+      >
+        let's
+         
+      </span>
+      <span
+        className="normal black inline"
+      >
+        get
+         
+      </span>
+      <span
+        className="normal black inline"
+      >
+        coffee
+         
+      </span>
+      <span
+        className="normal black inline"
+      >
+        one
+         
+      </span>
+      <span
+        className="normal black inline"
+      >
+        these
+         
+      </span>
+      <span
+        className="normal black inline"
+      >
+        days
+         
+      </span>
+      <span
+        className="normal black inline"
+      >
+        ☕
+         
+      </span>
+    </span>
+  </div>
+  <div
+    className="block square inherit"
+    style={
+      Object {
+        "height": "auto",
+        "margin": 0,
+        "padding": 0,
+        "width": "auto",
+        "zIndex": "auto",
+      }
+    }
+  />
+</div>
+`;
