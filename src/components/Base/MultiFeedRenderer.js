@@ -1,5 +1,5 @@
 import React from 'react'
-import ActivitySwitchRenderer from '../Getstream/Components/ActivitySwitchRendere'
+import ActivitySwitchRenderer from '../Getstream/Components/ActivitySwitchRenderer'
 import PostActivity from './PostActivity'
 import ReplyActivity from './ReplyActivity'
 

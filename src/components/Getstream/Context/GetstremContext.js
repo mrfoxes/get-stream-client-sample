@@ -24,7 +24,7 @@ class StreamContextProvider extends Component {
       },
       getStream() {
         return mystream
-      },
+      }
     })
   }
 
@@ -36,16 +36,16 @@ class StreamContextProvider extends Component {
     hasError: false,
     loading: true,
     session: null,
-    user: {},
+    user: {}
   }
 
   init = async () => {
-    const { apiKey, apiSecret, appId, options } = this.props
+    const { apiKey, apiSecret, appId, options, userToken } = this.props
 
     const connectionData = compact([apiKey, apiSecret, appId, options])
 
     const client = stream.connect(...connectionData)
-    const session = client.createUserSession('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoidXNlci1vbmUifQ.eSuLY8ZjhQJa-_koVQgHTQ5T0ZczanpfYaBBqZehvDQ')
+    const session = client.createUserSession(userToken)
 
     try {
       await session.feed('timeline').get({ limit: 0 })
@@ -57,7 +57,7 @@ class StreamContextProvider extends Component {
     } catch (e) {
       this.setState({
         hasError: true,
-        error: e,
+        error: e
       })
     }
   }
@@ -71,7 +71,7 @@ class StreamContextProvider extends Component {
       this.setState({
         user: response.data,
         userId: mystream.getUserId(),
-        loading: false,
+        loading: false
       })
     } catch (e) {
       console.log(JSON.stringify(e))
@@ -82,10 +82,10 @@ class StreamContextProvider extends Component {
     const { errorComponent } = this.props
 
     return (
-        <Fragment>
-          {!isUndefined(errorComponent) && safeRender(errorComponent)}
-          {isUndefined(errorComponent) && <div>Connection Error</div>}
-        </Fragment>
+      <Fragment>
+        {!isUndefined(errorComponent) && safeRender(errorComponent)}
+        {isUndefined(errorComponent) && <div>Connection Error</div>}
+      </Fragment>
     )
   }
 
@@ -93,18 +93,15 @@ class StreamContextProvider extends Component {
     const { loadingComponent } = this.props
 
     return (
-        <Fragment>
-          {!isUndefined(loadingComponent) && safeRender(loadingComponent)}
-          {isUndefined(loadingComponent) && <div>Loading...</div>}
-        </Fragment>
+      <Fragment>
+        {!isUndefined(loadingComponent) && safeRender(loadingComponent)}
+        {isUndefined(loadingComponent) && <div>Loading...</div>}
+      </Fragment>
     )
   }
 
   render() {
-    const {
-      hasError,
-      loading,
-    } = this.state
+    const { hasError, loading } = this.state
 
     if (hasError) {
       return this.renderError()
@@ -115,15 +112,15 @@ class StreamContextProvider extends Component {
     }
 
     return (
-        <Provider
-            value={{
-              ...this.state,
-              mystream: this.getStream(),
-              actions: {},
-            }}
-        >
-          {this.props.children}
-        </Provider>
+      <Provider
+        value={{
+          ...this.state,
+          mystream: this.getStream(),
+          actions: {}
+        }}
+      >
+        {this.props.children}
+      </Provider>
     )
   }
 }
@@ -132,14 +129,15 @@ StreamContextProvider.propTypes = {
   apiKey: PropTypes.string.isRequired,
   apiSecret: PropTypes.string,
   appId: PropTypes.string,
+  userToken: PropTypes.string.isRequired,
   options: PropTypes.string,
   errorComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.object]),
   loadingComponent: PropTypes.element,
-  onError: PropTypes.oneOf([PropTypes.func, PropTypes.number]),
+  onError: PropTypes.oneOf([PropTypes.func, PropTypes.number])
 }
 
 StreamContextProvider.defaultProps = {
-  onError: null,
+  onError: null
 }
 
 export const withStreamContext = createConsumerContext(Consumer)
