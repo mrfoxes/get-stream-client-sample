@@ -10,7 +10,7 @@ class Home extends Component {
         <Box display="block" marginTop={25}>
           <Box display="flex" justify="center">
             <Box display="flex" width="80%">
-              <Box display="flex" marginRight="auto" marginLeft="auto" direction="column">
+              <Box display="flex" marginRight="auto" marginLeft="auto" direction="column" maxWidth={400}>
                 <Box marginBottom={25}>
                   <Text color="flame">
                     <h2>Timeline</h2>

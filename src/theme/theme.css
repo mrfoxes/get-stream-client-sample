@@ -7,3 +7,16 @@ html, body {
 a {
     text-decoration: none !important;
 }
+
+.loadButton {
+    background-color:var(--green);
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    display:inline-block;
+    cursor:pointer;
+    color:var(--white);
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+}

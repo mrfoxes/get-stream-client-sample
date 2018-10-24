@@ -6,6 +6,7 @@
     --black: #000;
     --white: #fff;
     --grayBlue: #8F91A2;
+    --green: #44c767;
 }
 
 .jet {
@@ -22,6 +23,8 @@
 
 .spanishBlue {
     color: var(--spanishBlue);
+
+
 }
 
 .black {

@@ -156,7 +156,7 @@ class FeedStreamer extends Component<Props> {
 
     if (canRenderPagination) {
       return (
-          <button disabled={loading} onClick={this.fetchFeed}>Load Next</button>
+          <button disabled={loading} onClick={this.fetchFeed} className="loadButton">Load Next</button>
       )
     }
   }
