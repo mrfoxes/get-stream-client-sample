@@ -26,16 +26,6 @@ const routes = [
             exact: true,
             component: UserProfile,
           },
-          {
-            path: '/me/followers',
-            exact: true,
-            component: UserProfile,
-          },
-          {
-            path: '/me/following',
-            exact: true,
-            component: UserProfile,
-          },
         ],
       },
     ],
